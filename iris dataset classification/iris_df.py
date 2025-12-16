@@ -151,10 +151,10 @@ print(poly_sfs.score(poly_x_test,y_test))
 poly_y_pred = svc_poly.predict(X_test)
 poly_sfs_y_pred = poly_sfs.predict(knn_x_test)
 
-print("SVC RBF without feature selection")
+print("SVC poly without feature selection")
 print(confusion_matrix(y_test,poly_y_pred))
 print(classification_report(y_test,poly_y_pred))
 
-print("SVC RBF with feature selection")
+print("SVC poly with feature selection")
 print(confusion_matrix(y_test,poly_sfs_y_pred))
 print(classification_report(y_test,poly_sfs_y_pred))
